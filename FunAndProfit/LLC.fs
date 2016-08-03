@@ -286,7 +286,7 @@ and LLCInfo =
     
     /// <summary>
     /// Use this member instead of raw BusinessName property (which is hidden from users anyway,
-    /// thanks to the signature file). Phase determines how the name is formated.
+    /// thanks to the signature file). Phase determines how the name is formatted.
     /// </summary>
     member x.FullBusinessName =
         let rawName = LLCBusinessName.value x.BusinessName
@@ -322,7 +322,7 @@ let createLLC  (name : LLCBusinessName.T)
                let formationDate = aoa.Date
                let duration' = match duration with
                                | EndDate endDate when endDate.Date <= formationDate ->
-                                      failwith "End date can't come before FormationDate"
+                                      failwith "Data rozwiązania spółki (przewidziana w umowie) nie może być wcześniejsza, niż data jej zawiązania"
                                | _ -> duration
                // Make sure that the registered seat is located in Poland.
                if seat.Country.Trim().ToUpper() <> "POLSKA" then
@@ -369,9 +369,15 @@ let fileForRegistration (registrationDate : DateTime) (llc : LLCInfo) =
         | x -> x
     
     let phase = if differenceInMonths >= 6.0 then
-                    let boardMembers = defaultArg llc.ManagementBoard (failwith "Brak członków zarządu mogących być likwidatorami")
+                    let boardMembers =
+                        match llc.ManagementBoard with
+                        | Some b -> b
+                        | None -> failwith "Brak członków zarządu mogących być likwidatorami"
                     let liquidatorsOpt = Liquidators.Create boardMembers.Value
-                    let liquidators = defaultArg liquidatorsOpt (failwith "Brak członków zarządu mogących być likwidatorami")
+                    let liquidators =
+                        match liquidatorsOpt with
+                        | Some l -> l
+                        | None -> failwith "Brak członków zarządu mogących być likwidatorami"
                     InOrganizationInLiquidation (registrationDate, liquidators)
                 else AfterRegistration
 

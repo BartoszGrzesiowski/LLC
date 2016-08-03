@@ -61,7 +61,7 @@ systemu, będącego jednakże bardzo ubogą imitacją rzeczywistości. Tymczasem
 przeważnie ulokowanych w różnych aktach normatywnych. Sprawny interpretator tych aktów jest w stanie udzielić odpowiedzi na pytania
 zadane przez osobę zainteresowaną działaniem systemu prawnego; być może nawet ma na tyle dobrą pamięć, że potrafi wyrywkowo wskazać
 wszystkie znane mu potencjalne interakcje, które mogą wystąpić w tym systemie. Doświadczenie uczy wszelako, że maszyny cyfrowe
-z uwagi na swoją nieskończononą cierpliwość, pracowitość i efektywność lepiej wywiązują się z powierzonych ich zadań.
+z uwagi na swoją nieskończoną cierpliwość, pracowitość i efektywność lepiej wywiązują się z powierzonych ich zadań.
 
 Dlatego właśnie duże nadzieje autor programu pokłada w inicjatywach, takich jak system kognitywny [ROSS](http://www.rossintelligence.com/).
 100 współbieżnych wątków (threads) programu wykona zadanie sprawniej, niż 100 paralegals; na dodatek - co musi rozgrzać serca właścicieli
