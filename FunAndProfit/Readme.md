@@ -20,7 +20,7 @@ przykład tzw. reguły biznesowej (business rule), która ma zapewnić wewnętrz
 Dziedzina stosunków korporacyjnych nie zawiera zbyt wiele przykładów bytów, które są niezmienne; w matematyce taką wartością jest
 na przykład liczba 9. W przypadku spółki z o.o., zasady jej funkcjonowania determinuje chociażby forma ustrojowa, która jest zmienna
 w czasie. Spółka z o.o. w organizacji jest reprezentowana przez zarząd albo pełnomocnika powołanego jednomyślną uchwałą wspólników.
-Po otwarciu likwidacji spółę reprezentują likwidatorzy. Dlatego immanentnym elementem systemu informatycznego odzwierciedlającego
+Po otwarciu likwidacji spółkę reprezentują likwidatorzy. Dlatego immanentnym elementem systemu informatycznego odzwierciedlającego
 ramy prawne działania spółek z o.o. muszą być reguły zapewniające poprawność przemian między formami ustrojowymi spółki. Nie do
 pomyślenia jest przecież zarejestrowanie spółki, która jest w upadłości. Może inaczej - taką sytuację można sobie wyobrazić, ale
 poprawnie działający system ma za zadanie do tego nie dopuścić.
@@ -61,7 +61,7 @@ systemu, będącego jednakże bardzo ubogą imitacją rzeczywistości. Tymczasem
 przeważnie ulokowanych w różnych aktach normatywnych. Sprawny interpretator tych aktów jest w stanie udzielić odpowiedzi na pytania
 zadane przez osobę zainteresowaną działaniem systemu prawnego; być może nawet ma na tyle dobrą pamięć, że potrafi wyrywkowo wskazać
 wszystkie znane mu potencjalne interakcje, które mogą wystąpić w tym systemie. Doświadczenie uczy wszelako, że maszyny cyfrowe
-z uwagi na swoją nieskończoną cierpliwość, pracowitość i efektywność lepiej wywiązują się z powierzonych ich zadań.
+z uwagi na swoją nieskończoną cierpliwość, pracowitość i efektywność lepiej wywiązują się z powierzonych im zadań.
 
 Dlatego właśnie duże nadzieje autor programu pokłada w inicjatywach, takich jak system kognitywny [ROSS](http://www.rossintelligence.com/).
 100 współbieżnych wątków (threads) programu wykona zadanie sprawniej, niż 100 paralegals; na dodatek - co musi rozgrzać serca właścicieli
@@ -76,7 +76,7 @@ Definicja programu znajduje się w pliku LLC.fs.
 1. Wielkie mi mecyje. Kto by nie potrafił omówić regulacji KSH o spółce z o.o.?
 
 Touché. Na pewno czytelnik potrafi ją omówić w środku nocy. I na wspak. Dlatego też wybrałem ją jako wdzięczny obiekt moich
-zainteresowań związanych z DDD (Domain Driven Development). Łatwiej jest dzięki temu osiągnąć porozumienie co do treści reguł
+zainteresowań związanych z DDD (Domain Driven Development). Łatwiej jest osiągnąć porozumienie co do treści reguł
 dotyczących funkcjonowania tego podmiotu i wychwycić błędy. Jeżeli pomysł okaże się dobry, być może stworzę bardziej
 skomplikowane modele.
 
